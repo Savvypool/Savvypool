@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffd452;
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+.container {
+    background-color: snow;
+    padding: 113px;
+    border-radius: 20px;
+}
+.hero{
+	text-align: center;
+}
