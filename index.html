@@ -17,6 +17,9 @@
 		<title>Savvypool</title>
 	
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -59,7 +62,7 @@
 						<input type="hidden" name="_captcha" value="false">
 						<div class="btn-group">
 						  <button type="submit" class="btn btn-blue">Submit</button>
-						  <a class="btn btn-blue" href="index.html">Cancel</a>
+						  <button class="btn btn-light modal__close">Cancel</button>
 						</div>
 					  </form>
 					</div>
@@ -68,14 +71,15 @@
 					<div class="row fullscreen align-items-center justify-content-between">
 						<div class="col-lg-6 col-md-7 col-sm-8">
 							<div class="banner-content">
-								<h2>Empower your aspirations.</h2><br><h1>Be Limitless!</h1>
-								<p>Explore your boundless potential as you strive hard for a future of inspiration and growth.
-									Mold the best version of you with us!</p>
+								<h1>Explore your ambitions,<br> Explore You!</h1>
+								<p>When you dig into what you want the most, You are digging into you.Your ambition gives you,<strong>You!</strong></p>
 								<button class="primary-btn" data-toggle="modal" data-target="#modal">Join us  <span class="lnr lnr-arrow-right"></span></button>
 							</div>
 						</div>
 						<div class="col-lg-5 col-md-5 col-sm-4">
-							<img src="img/banner.png" alt="" class="img-fluid">
+							<video autoplay="" loop="" muted="" plays-inline="" class="back-video">
+								<source src="img/video.mp4" type="video/mp4">
+							</video>
 						</div>
 					</div>
 				</div>
@@ -90,13 +94,13 @@
 							<!-- Tabs Links -->
 							<ul class="nav nav-tabs" id="argoTabs" role="tablist">
 								<li class="nav-item">
-									<a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"></i>Students</a>
+									<a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Students</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"></i>Mentors</a>
+									<a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Mentors</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"></i>Universities</a>
+									<a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-chart-bar"></i>Universities</a>
 								</li>
 							</ul>
 							<!-- end of tabs links -->
@@ -110,9 +114,7 @@
 										
 											<div class="text-container">
 												<h2>Students</h2>
-												<p>When faced with what field to study, individuals often experience confusion. Here,
-													acknowledging one's true passion is significant. Savvy offers assistance in exploring and
-													navigating these diverse choices.</p>
+												<p>When it comes to choose what to study, we all become confused. But when we found what our heart desires , then our choices become wide. Savvy helps you to explore those choices.</p>
 												<div class="row g-4">
 													<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
 														<div class="service-item position-relative h-100">
@@ -122,8 +124,7 @@
 																	<img class="img-fluid" src="img/icon-5.jpg" alt="Icon">
 																</div>
 																<h5 class="mb-3">ARTS & HANDICRAFT</h4>
-																	<p class="mb-0">Art is the heart of imagination. Bringing it to life requires planning, discipline, and hard
-																		work.<br>
+																	<p class="mb-0">It's all about little imagination of yours.How to make it real?.<br>
 																	<br></p>
 															</div>
 															<div class="service-btn rounded-0 rounded-bottom">
@@ -140,7 +141,7 @@
 																	<img class="img-fluid" src="img/Soccer-bro.png" alt="Icon">
 																</div>
 																<h5 class="mb-3">Sports</h4>
-																	<p class="mb-0">With over 800 sports played globally, which sport will you thrive at?<br>
+																	<p class="mb-0">There are 800+ sports played around the world.Which one does you belong to?.<br>
 																	<br></p>
 															</div>
 															<div class="service-btn rounded-0 rounded-bottom">
@@ -157,7 +158,7 @@
 																	<img class="img-fluid" src="img/Learning-bro.png" alt="Icon">
 																</div>
 																<h5 class="mb-3">Studies</h4>
-																	<p class="mb-0">Prioritize studying the subject you are most passionate about and eager to explore.<br>
+																	<p class="mb-0">What you desire to study the most, study about that first.<br>
 																	<br></p>
 															</div>
 															<div class="service-btn rounded-0 rounded-bottom">
@@ -178,8 +179,7 @@
 										<div class="col-lg-6">
 											<div class="text-container">
 												<h2>Mentors</h2>
-												<p>Teaching is a profession that paves the way for diverse career opportunities. Savvy values
-													and extends those opportunities.</p>
+												<p>Teaching is the one profession that creates all other professions. Savvy respects you and gives you more wide opportunities.</p>
 											</div> <!-- end of text-container -->
 										</div> 
 										<div class="row g-4">
@@ -191,8 +191,7 @@
 															<img class="img-fluid" src="img/Mathematics-bro.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">Faculty retention</h4>
-															<p class="mb-0">Savvy provides you with opportunities to discover openings and enhance your teaching
-																skills.<br>
+															<p class="mb-0">It's all about little imagination of yours.How to make it real?.<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -209,7 +208,7 @@
 															<img class="img-fluid" src="img/Lesson-pana.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">Get Across</h4>
-															<p class="mb-0">Here you get a chance to be part of a community that harnesses growth every day.<br>
+															<p class="mb-0">There are 800+ sports played around the world.Which one does you belong to?.<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -226,7 +225,7 @@
 															<img class="img-fluid" src="img/Webinar-pana.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">Passion & Profession</h4>
-															<p class="mb-0">Embrace and reach out for your passion where you grow while imparting wisdom.<br>
+															<p class="mb-0">What you desire to study the most, study about that first.<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -246,8 +245,7 @@
 										<div class="col-lg-6">
 											<div class="text-container">
 												<h2>Universities</h2>
-												<p>A university or institute is not a mere physical infrastructure. It symbolizes a beacon of hope,
-													where aspiring individuals embark on the pursuit of their dreams.</p>
+												<p>A university or institute is not just a building with walls, its a hope that gives shelter for the one who wanted to pursue their dreams.</p>
 											</div>
 											 <!-- end of text-container -->
 										</div> 
@@ -260,7 +258,7 @@
 															<img class="img-fluid" src="img/uni.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">MAKE KNOWN</h4>
-															<p class="mb-0">Give information and assistance to those who seek to learn.<br>
+															<p class="mb-0">Give information for those who want it<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -277,8 +275,7 @@
 															<img class="img-fluid" src="img/Nerd-amico.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">GET TO KNOW</h4>
-															<p class="mb-0">In addition to spreading knowledge, it is also crucial to develop an understanding of our
-																community and its dynamics.<br>
+															<p class="mb-0">Sometimes it is important to know about our community too.<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -295,7 +292,7 @@
 															<img class="img-fluid" src="img/Graduation-bro.png" alt="Icon">
 														</div>
 														<h5 class="mb-3">UPDATE</h4>
-															<p class="mb-0">Remaining informed and up-to-date with market trends is essential for ensuring relevance.<br>
+															<p class="mb-0">New world needs new updates.<br>
 															<br></p>
 													</div>
 													<div class="service-btn rounded-0 rounded-bottom">
@@ -317,6 +314,14 @@
 				</div> <!-- end of container -->
 			</div> <!-- end of tabs -->
 			<!-- end of features -->
+			<!-- End studio Area -->
+			<!-- Start Achivement Area -->
+			<!-- End Achivement Area -->
+			<!-- Start Video Area -->
+			
+			<!-- End Video Area -->
+			<!-- Start Skill Area -->
+			<!-- End Skill Area -->
 			<!-- Start Carousel Area -->
 			<section class="section-gap carousel-area">
 				<div class="overlay overlay-bg"></div>
@@ -332,7 +337,7 @@
 								<div class="col-xl-6 col-md-7">
 									<div class="carousel-content">
 										<h2 class="text-white">With Savvypool</h2>
-										<h1 class="text-white mb-20"><strong>grant yourself the prospect to flourish and prosper!</strong> </h1>
+										<h1 class="text-white mb-20"><strong>Give a Chance To Yourself</strong> </h1>
 										<p class="text-white mb-30">By communicating and exploring With others you are giving yourself a chance.</p>
 										<a href="students.html" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
 									</div>
@@ -351,7 +356,7 @@
 								<div class="col-xl-6 col-md-7">
 									<div class="carousel-content">
 										<h2 class="text-white">With Savvypool</h2>
-										<h1 class="text-white mb-20"><strong>reimagine your goal to be perfect every day!</strong></h1>
+										<h1 class="text-white mb-20"><strong>Draw The Picture Of Your Goal</strong></h1>
 										<p class="text-white mb-30">By communicating and exploring With others you are giving yourself a chance.</p>
 										<a href="students.html" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
 									</div>
@@ -370,7 +375,7 @@
 								<div class="col-xl-6 col-md-7">
 									<div class="carousel-content">
 										<h2 class="text-white">With Savvypool</h2>
-										<h5 class="text-white mb-20">give life to your dreams!</h5>
+										<h5 class="text-white mb-20">Change Your Dream Into Reality</h5>
 										<p class="text-white mb-30">By communicating and exploring With others you are giving yourself a chance.</p>
 										<a href="students.html" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
 									</div>
@@ -389,7 +394,7 @@
 								<div class="col-xl-6 col-md-7">
 									<div class="carousel-content">
 										<h2 class="text-white">With Savvypool</h2>
-										<h5 class="text-white mb-20">Explore the limitless in you!</h5>
+										<h5 class="text-white mb-20">Explore Your Ambitions.EXPLORE YOU!</h5>
 										<p class="text-white mb-30">By communicating and exploring With others you are giving yourself a chance.</p>
 										<a href="students.html" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
 									</div>
@@ -413,7 +418,8 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-address text-center">
 								<h6>Connect with us :</h6>
-								<p><a href="mailto:admin.sp@savvypool.com">admin.sp@savvypool.com</a> <br>
+								<p><a href="mailto:admin@savvypool.com">admin@savvypool.com</a> <br>
+								<a href="https://www.instagram.com/invites/contact/?i=1pwx8u5ks90rm&utm_content=q8snt53">Savvypool</a>
 								
 							</div>
 						</div>
@@ -431,7 +437,46 @@
 					</div>
 				</div>
 			</section>
+			<!-- End Contact Area -->
+	
+			<!-- Start Subscription Area -->
+	
+			<!-- End Subscription Area -->
+	
+			<!-- Strat Footer Area -->
+			<!--footer class="section-gap footer-widget-area">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="subscription-area">
+						<div class="row justify-content-center">
+							<div class="col-lg-6">
+								<div id="mc_embed_signup">
+									<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative">
+										<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+										<div style="position: absolute; left: -5000px;">
+											<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+										</div>
+										<a href="mailto:arshedbv2018@gmail.com@gmail.com"><button class="primary-btn">Subscribe now<span class="lnr lnr-arrow-right"></span></button></a>
+										<div class="info"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+						<p class="footer-text m-0">Copyright &copy; 2018 All rights reserved   |   This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/">Colorlib</a></p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer-->
+			<!-- End Footer Area -->
 			</div>
+	
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
