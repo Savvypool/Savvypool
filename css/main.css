@@ -1846,7 +1846,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .default-header {
-  padding: 20px 60px;
+  padding: 10px 15px;
   position: sticky;
   top: 0;
   left: 0;
@@ -1854,9 +1854,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .default-header {
-    padding: 20px 30px;
+    padding: 0px 8px;
   }
 }
 
