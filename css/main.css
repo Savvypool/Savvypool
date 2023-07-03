@@ -2976,6 +2976,7 @@ nav a:hover {
 .new{
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .new-body{
   color: #000000;
