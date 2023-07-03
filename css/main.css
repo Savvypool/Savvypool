@@ -6,8 +6,6 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #f9ff52;
@@ -1844,19 +1842,23 @@ h1, h2, h3, h4, h5, h6 {
 .form-select .nice-select::after {
   right: 20px;
 }
+/* new changed header */
 
 .default-header {
-  padding: 10px 15px;
+  padding: 20px 30px;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .default-header {
-    padding: 0px 8px;
+    padding: 20px 30px;
   }
 }
 
@@ -1880,7 +1882,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-  margin-right: 3px;
+  margin-right: 70px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1888,7 +1890,7 @@ nav {
   transform-origin: 100% 50%;
 }
 
-@media (max-width: 7px) {
+@media (max-width: 767px) {
   nav {
     margin-right: 0;
     position: absolute;
@@ -1900,21 +1902,15 @@ nav {
     background: #fff;
   }
 }
-
-nav.hide {
-  transform: scale(1);
-}
-@media (max-width: 900px) {
+/* nav expande after certain limit */
+@media (min-width: 767px) {
   nav.hide {
-    margin: 5px -9px;
     transform: scale(1);
   }
 }
-@media (max-width: 1100px) {
-  nav.hide {
-    
-    transform: scale(0);
-  }
+/*--end--*/
+nav.hide {
+  transform: scale(0);
 }
 
 nav a {
@@ -1950,11 +1946,10 @@ nav a:hover {
 
 .dup-body {
   background: rgba(255, 201, 0, 0.8);
-  
 }
+/* without box shadow effect*/
 
 .dup-body-wrap {
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
   margin: 50px;
   position: relative;
 }
@@ -1980,12 +1975,80 @@ nav a:hover {
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+    padding-top: 15px;
   }
 }
 
 .section-gap {
   padding: 120px 0;
 }
+
+/* join us button in little nav bar */
+.primary-btn1 {
+  line-height: 42px;
+  padding-right: 42px;
+  padding-left: 8px;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid #000000;
+  color: #222222;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.primary-btn1:focus {
+  outline: none;
+}
+
+.primary-btn1 span {
+  color: #222222;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-btn1:hover {
+  background: #FFC947;
+  color: #fff;
+}
+
+.primary-btn1:hover span {
+  color: #fff;
+  right: 20px;
+}
+
+.primary-btn1.white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.primary-btn1.white span {
+  color: #fff;
+}
+
+.primary-btn1.white:hover {
+  background: #fff;
+  color: #e0003b;
+}
+
+.primary-btn1.white:hover span {
+  color: #e0003b;
+}
+
+/*--end--*/
 
 .primary-btn {
   line-height: 42px;
@@ -2057,18 +2120,19 @@ nav a:hover {
 
 @media (max-width: 767px) {
   .banner-area .fullscreen {
-    height: 800px !important;
+    height: 690px !important;
   }
 }
+/* margin top for mobile changed due bto long gap with navbar */
 
 @media (max-width: 767px) {
   .banner-content {
-    margin-top: 100px;
+    margin-top: -35px;
   }
 }
 
 .banner-content h1 {
-  font-size: 42px;
+  font-size: 47px;
   font-weight: 600;
   line-height: 1.15em;
   margin-bottom: 20px;
@@ -2076,7 +2140,7 @@ nav a:hover {
 
 @media (max-width: 991px) {
   .banner-content h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
@@ -2089,10 +2153,11 @@ nav a:hover {
 .banner-content p {
   margin-bottom: 60px;
   font-size: 16px;
+  color: #101010;
 }
 
 @media (max-width: 767px) {
-  .banner-content p {
+  -content p {
     margin-bottom: 20px;
   }
 }
@@ -2886,6 +2951,7 @@ nav a:hover {
 	display: flex;
 	grid-gap: .75rem;
 }
+/*  new changes regarding  nav bar */
 .courses {
   display: flex;
     flex-wrap: wrap;
@@ -2922,4 +2988,194 @@ nav a:hover {
 .back-video{
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+}
+
+/* font changes */
+.font{
+  font-family: 'Nabla', cursive;
+  font-size: 80px;
+}
+
+/* new carousel testing */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: white;
+}
+
+.product-category {
+  padding: 0 5vw;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ffee00;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
 }

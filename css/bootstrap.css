@@ -626,6 +626,30 @@ pre code {
   }
 }
 
+/* container 1 */
+@media (min-width: 576px) {
+  .container1 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container1 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container1 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container1 {
+    max-width: 2351px;
+  }
+}
 .container-fluid {
   width: 100%;
   margin-right: auto;
@@ -638,10 +662,18 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 1px;
+  margin-left: 10px;
+  height: 690px;
 }
 
+/* row for contact area */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1px;
+  margin-left: 10px;
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
