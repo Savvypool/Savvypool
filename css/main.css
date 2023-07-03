@@ -1987,10 +1987,10 @@ nav a:hover {
 .primary-btn1 {
   line-height: 42px;
   padding-right: 42px;
-  padding-left: 8px;
+  padding-left: 18px;
   border-radius: 25px;
   background: transparent;
-  border: 1px solid #000000;
+  border: 1px solid #ffc107;
   color: #222222;
   display: inline-block;
   font-weight: 500;
