@@ -1845,7 +1845,7 @@ h1, h2, h3, h4, h5, h6 {
 /* new changed header */
 
 .default-header {
-  padding: 20px 30px;
+  padding: 20px 15px;
   position: sticky;
   top: 0;
   left: 0;
@@ -2056,7 +2056,7 @@ nav a:hover {
   padding-right: 60px;
   border-radius: 25px;
   background: transparent;
-  border: 1px solid #000000;
+  border: 1px solid #ffc107;
   color: #222222;
   display: inline-block;
   font-weight: 500;
