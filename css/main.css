@@ -3005,6 +3005,12 @@ nav a:hover {
   padding: 20px;
   background: white;
 }
+@media (max-width: 767px) {
+  .product {
+    height: 437px;
+  }
+}
+
 
 .product-category {
   padding: 0 5vw;
@@ -3032,12 +3038,29 @@ nav a:hover {
   margin-right: 40px;
 }
 
+@media (max-width: 767px) {
+  .product-card {
+    width: 247px;
+    height: 395px;
+    margin-right: -37px;
+  }
+}
+
 .product-image {
   position: relative;
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
+
+@media (max-width: 767px) {
+  .product-image {
+    margin-left: -6px;
+    height: 131px;
+    width: 188px;
+  }
+}
+
 
 .product-thumb {
   width: 100%;
@@ -3127,6 +3150,13 @@ nav a:hover {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
   cursor: pointer;
   z-index: 8;
+}
+
+@media (max-width: 767px) {
+  .pre-btn,
+  .nxt-btn {
+    height: 130%;
+  }
 }
 
 .pre-btn {
