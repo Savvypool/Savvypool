@@ -659,14 +659,15 @@ pre code {
   width: 100%;
 }
 
-.row {
+.rows {
   display: flex;
   flex-wrap: wrap;
   margin-right: 1px;
   margin-left: 10px;
   height: 600px;
+  align-items: center;
+  justify-content: space-between;
 }
-
 /* row for contact area */
 .row1 {
   display: flex;
