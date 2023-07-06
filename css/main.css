@@ -2322,8 +2322,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active-bottle-carousel .carousel-thumb {
-  border-radius: 5px;
+  border-radius: 8px;
+  width: 80%;
   overflow: hidden;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .active-bottle-carousel .carousel-thumb img {
