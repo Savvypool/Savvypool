@@ -3090,7 +3090,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .pre-btn,
   .nxt-btn {
-    height: 130%;
+    height: 104%;
   }
 }
 
