@@ -1868,7 +1868,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .dup-body {
-  background: rgba(255, 201, 0, 0.8);
+  background: #ffc900;
 }
 /* without box shadow effect*/
 
@@ -3395,4 +3395,15 @@ h1, h2, h3, h4, h5, h6 {
   .card_head{
     font-size:35px;
   }
+}
+
+/* preloader */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 106vh;
+  background: #ffc900 url(https://cdn.dribbble.com/users/241526/screenshots/954930/loader.gif) no-repeat center center;
+  background-size: 20%;
+  z-index: 100; /* adjust the z-index if necessary */
+  bottom: -16px;
 }
