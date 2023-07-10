@@ -33,6 +33,7 @@
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="https://unpkg.com/scrollreveal"></script>
 		</head>
 		<body class="dup-body">
 			<div class="dup-body-wrap">
@@ -556,7 +557,23 @@
 					</div>
 				</div>
 			</section>
+			<!--Animation script-->
+			<script>
+				ScrollReveal({ 
+					reset: true,
+					distance:'60px',
+					duration:2500,
+					delay:400
+				});
 
+				ScrollReveal().reveal('.banner-content', { delay: 500 , origin: 'right'});
+				ScrollReveal().reveal('.back-video', { delay: 500 , origin: 'left'});
+				ScrollReveal().reveal('.product-category', { delay: 500 , origin: 'top'});
+				ScrollReveal().reveal('.product-container', { delay: 500 , origin: 'right'});
+				ScrollReveal().reveal('.consectetur_text, .dummy_text', { delay: 500 , origin: 'bottom'});
+			</script>
+			
+			<!--end-->
 			<!--new carousel-->
 			</div>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
