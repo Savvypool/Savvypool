@@ -3397,4 +3397,42 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* preloader */
+/* details page */
+.cardz {
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.116);
+}
+.cardz {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 1rem;
+}
+.text-reset {
+  --bs-text-opacity: 1;
+  color: inherit!important;
+}
+a {
+  color: #6bf51c;
+  text-decoration: none;
+}
+.rowz{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .rowz{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.cardz-body{
+  width: 320px;
+  margin-left: 15px;
+  margin-top: 14px;
+  margin-bottom: 91px;
+}
