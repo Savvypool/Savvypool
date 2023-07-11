@@ -3431,8 +3431,22 @@ a {
   }
 }
 .cardz-body{
-  width: 320px;
+  width: 390px;
   margin-left: 15px;
-  margin-top: 14px;
-  margin-bottom: 91px;
+  margin-top: 25px;
+  margin-bottom: 21px;
+}
+.img_details{
+  width: 43px;
+  margin-left: 10px;
+}
+.h1_course{
+  font-size: 22px;
+}
+.courses_p{
+  font-size: 20px;
+  padding: 20px;
+}
+.courses_eligibility{
+  width: 600px;
 }
