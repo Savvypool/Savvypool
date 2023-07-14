@@ -3399,7 +3399,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* details page */
 .course-details .course-info {
-  background: #f6f7f6;
   padding: 10px 15px;
   margin-bottom: 15px;
 }
@@ -3443,6 +3442,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 .cource-details-tabs .nav-link.active {
-  color: #5fcf80;
-  border-color: #5fcf80;
+  color: #000;
+  border-color: #ffc900;
+  border-radius: 25px;
+  background: #fff5d0;
 }
