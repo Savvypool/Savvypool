@@ -3028,6 +3028,9 @@ tbody.collapse.show {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  padding: 16px;
+  font-size: 20px;
+  font-family: DM Sans;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
