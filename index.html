@@ -99,26 +99,45 @@
 			<!-- End Banner Area -->
 			<!--popular courses-->
 			<section class="product"> 
-				<h1 class="product-category">Popular courses</h1>
+				<h1 class="product-category">Popular short courses</h1>
 				<button class="pre-btn"><img src="img/arrow.png" alt=""></button>
 				<button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
 				<div class="product-container">
-					
-					<div class="product-card"><a href="courses.html">
-						<div class="product-image">
+					<div class="product-card">
+						<div class="product-image"><a href="webdev.html">
+							<span class="discount-tag">2 courses</span>
+							<img src="img/web.jpg" class="product-thumb" alt="">
+							<button class="card-btn">Details</button></a>
+						</div>
+						<div class="product-info">
+							<h3 class="product-brand">Web Development</h3>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-image"><a href="graphic-designing.html">
 							<span class="discount-tag"></span>
+							<img src="img/website course box-01.jpg" class="product-thumb" alt=""></a>
+							<a  href="graphic-designing.html"></a><button class="card-btn">Details</button></a>
+						</div>
+						<div class="product-info">
+							<h2 class="product-brand">Graphic Designing</h2>
+						</div>
+					</div>
+					<div class="product-card"><a href="digital-marketing.html">
+						<div class="product-image">
+							<span class="discount-tag"><p></p></span>
 							<img src="img/digital-marketing.jpg" class="product-thumb" alt="">
-							<a href="courses.html"><button class="card-btn">Details</button></a>
+							<a href="digital-marketing.html"><button class="card-btn">Details</button></a>
 						</div>
 						<div class="product-info">
 							<h2 class="product-brand">Digital marketing</h2>
 						</div>
 					</div>	
-					<div class="product-card">
+					<div class="product-card"><a href="cma.html">
 						<div class="product-image">
 							<span class="discount-tag"></span>
-							<img src="img/ca.jpg" class="product-thumb" alt="">
-							<button class="card-btn">Details</button>
+							<img src="img/ca.jpg" class="product-thumb" alt=""></a>
+							<a href="cma.html"><button class="card-btn">Details</button></a>
 						</div>
 						<div class="product-info">
 							<h2 class="product-brand">CA/CMA/ACCA</h2>
@@ -478,18 +497,18 @@
 			<!--Animation script-->
 			<script>
 				ScrollReveal({ 
-					reset: true,
+					reset: false,
 					distance:'60px',
 					duration:1000,
 					delay:200
 				});
 
-				ScrollReveal().reveal('.banner-content', { delay: 500 , origin: 'right'});
-				ScrollReveal().reveal('.back-video', { delay: 500 , origin: 'left'});
-				ScrollReveal().reveal('.product-category', { delay: 500 , origin: 'top'});
-				ScrollReveal().reveal('.product-container', { delay: 500 , origin: 'right'});
-				ScrollReveal().reveal('.consectetur_text, .dummy_text', { delay: 500 , origin: 'bottom'});
-				ScrollReveal().reveal('.image_4', { delay: 500 , origin: 'top'});
+				ScrollReveal().reveal('.banner-content', { delay: 200 , origin: 'right'});
+				ScrollReveal().reveal('.back-video', { delay: 200 , origin: 'left'});
+				ScrollReveal().reveal('.product-category', { delay: 200 , origin: 'top'});
+				ScrollReveal().reveal('.product-container', { delay: 300 , origin: 'right'});
+				ScrollReveal().reveal('.consectetur_text, .dummy_text', { delay: 200 , origin: 'bottom'});
+				ScrollReveal().reveal('.image_4', { delay: 200 , origin: 'top'});
 			</script>
 			<!--end-->
 			<!--new carousel-->
