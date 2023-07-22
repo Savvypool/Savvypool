@@ -3250,7 +3250,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: 170px;
+    height: 228px;
     overflow-y: none;
   }
   @media (max-width: 767px) {
