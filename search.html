@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+		<link rel="shortcut icon" href="img/logo.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Savvypool</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/nice-select.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body class="dup-body">
+
+
+
+			<div class="dup-body-wrap">
+        <header class="default-header">
+          <div class="nav">
+              <input type="checkbox" id="nav-check">
+              <div class="nav-header">
+                <div class="nav-title">
+                  <a href="index.html"><h1><strong>Savvypool</strong></h1></a>
+                </div>
+              </div>
+              <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              
+              <div class="nav-links">
+                <a href="index.html" style="font-family: DM Sans;">Home</a>
+                <a href="List-your-university.html" style="font-family: DM Sans;">List your university</a>
+            </div>
+      </header>
+      
+      <!-- Team Start -->
+      <div class="container-xxl py-51" style="background-color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+        <!--search-bar-->
+        <div class="wrapper">
+          <div id="search-container">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search product name here.."
+              onkeydown="Search(event)"
+            />
+            <button id="search" onClick="Search()">Search</button>
+          </div>
+          <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Web-dev')">
+              Web-dev
+            </button>
+            <button class="button-value" onclick="filterProduct('Bottomwear')">
+              Bottomwear
+            </button>
+            <button class="button-value" onclick="filterProduct('Jacket')">
+              Jacket
+            </button>
+            <button class="button-value" onclick="filterProduct('Watch')">
+              Watch
+            </button>
+          </div>
+      <div id="searchResultContainer"></div>
+
+          <!-- <div id="card"></div> -->
+        </div>
+        <!--end-->
+      </div>
+      <script>
+        ScrollReveal({ 
+          reset: true,
+          distance:'60px',
+          duration:900,
+          delay:80
+        });
+  
+        ScrollReveal().reveal('.card', { delay: 500 , origin: 'bottom' ,interval:'300'});
+      </script>
+      <script>
+        let searchItems = [
+    {
+      productName: "Full-stack development",
+      category: "Web-dev",
+      price: "30",
+      image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/2023-city-exterior-right-front-three-quarter.jpeg?isig=0&q=75",
+    },
+    {
+      productName: "Beige Short Skirt",
+      category: "Bottomwear",
+      price: "49",
+      image: "short-skirt.jpg",
+    },
+    {
+      productName: "Sporty SmartWatch",
+      category: "Watch",
+      price: "99",
+      image: "sporty-smartwatch.jpg",
+    },
+    {
+      productName: "Basic Knitted Top",
+      category: "Topwear",
+      price: "29",
+      image: "knitted-top.jpg",
+    },
+    {
+      productName: "Black Leather Jacket",
+      category: "Jacket",
+      price: "129",
+      image: "black-leather-jacket.jpg",
+    },
+    {
+      productName: "Stylish Pink Trousers",
+      category: "Bottomwear",
+      price: "89",
+      image: "pink-trousers.jpg",
+    },
+    {
+      productName: "Brown Men's Jacket",
+      category: "Jacket",
+      price: "189",
+      image: "brown-jacket.jpg",
+    },
+    {
+      productName: "Comfy Gray Pants",
+      category: "Bottomwear",
+      price: "49",
+      image: "comfy-gray-pants.jpg",
+    },
+  ];
+for (let i of card.data) {
+  //Create Card
+  let card = document.createElement("div");
+  //Card should have category and should stay hidden initially
+  card.classList.add("card", i.category, "hide");
+  //image div
+  let imgContainer = document.createElement("div");
+  imgContainer.classList.add("image-container");
+  //img tag
+  let image = document.createElement("img");
+  image.setAttribute("src", i.image);
+  imgContainer.appendChild(image);
+  card.appendChild(imgContainer);
+  //container
+  let container = document.createElement("div");
+  container.classList.add("card");
+  //product name
+  let name = document.createElement("h5");
+  name.classList.add("product-name");
+  name.innerText = i.productName.toUpperCase();
+  container.appendChild(name);
+  //price
+  let price = document.createElement("h6");
+  price.innerText = "$" + i.price;
+  container.appendChild(price);
+  card.appendChild(container);
+  document.getElementById("card").appendChild(card);
+}
+//parameter passed from button (Parameter same as category)
+function filterProduct(value) {
+  //Button class code
+  let buttons = document.querySelectorAll(".button-value");
+  buttons.forEach((button) => {
+    //check if value equals innerText
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+  //select all card
+  let elements = document.querySelectorAll(".card");
+  //loop through all card
+  elements.forEach((element) => {
+    //display all card on 'all' button click
+    if (value == "all") {
+      element.classList.remove("hide");
+    } else {
+      //Check if element contains category class
+      if (element.classList.contains(value)) {
+        //display element based on category
+        element.classList.remove("hide");
+      } else {
+        //hide other elements
+        element.classList.add("hide");
+      }
+    }
+  });
+}
+//Search button click
+function Search(event){
+  const searchResultContainer = document.getElementById("searchResultContainer");
+  searchResultContainer.innerHTML = null;
+  console.log(searchItems)
+  let searchInput;
+  if(event?.key){
+    searchInput = document.getElementById("search-input").value+event.key;
+  }else{
+    searchInput = document.getElementById("search-input").value;
+  }
+  
+  const regexPattern = new RegExp(searchInput, "i");
+  searchResults = searchItems.filter(item=>{
+if (regexPattern.test(item.productName)) {
+  return item;
+}
+})
+
+
+console.log(searchResults)
+searchResults.forEach(item=>{
+
+  // Function to create the card dynamically
+    // Card container
+    const cardContainer = document.createElement("div");
+    cardContainer.classList.add("card");
+
+    // Card image
+    const cardImage = document.createElement("img");
+    cardImage.classList.add("card__image");
+    cardImage.src = item.image;
+    cardContainer.appendChild(cardImage);
+
+    // Card content
+    const cardContent = document.createElement("div");
+    cardContent.classList.add("card__content");
+  
+    const h3 = document.createElement("h3");
+    h3.style.fontFamily = "DM Sans";
+    h3.style.fontWeight = "700";
+    h3.textContent = "Web dev";
+    cardContent.appendChild(h3);
+  
+    const h2Link = document.createElement("a");
+    h2Link.href = item.link;
+    const h2 = document.createElement("h2");
+    h2.style.fontFamily = "DM Sans";
+    h2.style.fontWeight = "700";
+    h2.textContent = item.productName;
+    h2Link.appendChild(h2);
+    cardContent.appendChild(h2Link);
+  
+    const pLink = document.createElement("a");
+    pLink.href = item.link;
+    const p = document.createElement("p");
+    p.textContent = item.description;
+    pLink.appendChild(p);
+    cardContent.appendChild(pLink);
+
+    cardContainer.appendChild(cardContent);
+
+    // Card info
+    const cardInfo = document.createElement("div");
+    cardInfo.classList.add("card__info");
+  
+    const acodemyLink = document.createElement("a");
+    acodemyLink.href = "acodemy.html";
+  
+    const acodemyDiv = document.createElement("div");
+  
+    const miniImage = document.createElement("img");
+    miniImage.classList.add("mini_image");
+    miniImage.src = item.image;
+    acodemyDiv.appendChild(miniImage);
+
+    const h4 = document.createElement("h4");
+    h4.classList.add("mini_course");
+    h4.style.fontFamily = "DM Sans";
+    h4.style.fontWeight = "700";
+    h4.style.textDecoration = "underline";
+    h4.innerHTML = "<strong>Acodemy</strong>";
+    acodemyDiv.appendChild(h4);
+
+    acodemyLink.appendChild(acodemyDiv);
+    cardInfo.appendChild(acodemyLink);
+  
+    const cardLinkDiv = document.createElement("div");
+    const cardLink = document.createElement("a");
+    cardLink.href = "fullstack.html";
+    cardLink.classList.add("card__link");
+  
+    const arrowIcon = document.createElement("i");
+    arrowIcon.classList.add("fa", "fa-arrow-right");
+    arrowIcon.setAttribute("aria-hidden", "true");
+    cardLink.appendChild(arrowIcon);
+  
+    cardLinkDiv.appendChild(cardLink);
+    cardInfo.appendChild(cardLinkDiv);
+  
+    cardContainer.appendChild(cardInfo);
+  
+  
+  
+  // Get the searchResultContainer div
+  
+  // Create the card and append it to the searchResultContainer
+  
+  
+  searchResultContainer.appendChild(cardContainer);
+})
+  
+}
+
+// function Search(){
+  //   //initializations
+  //   let searchInput = document.getElementById("search-input").value;
+//   let elements = document.querySelectorAll(".product-name");
+//   let card = document.querySelectorAll(".card");
+//   //loop through all elements
+//   elements.forEach((element, index) => {
+//     //check if text includes the search value
+//     if (element.innerText.includes(searchInput.toUpperCase())) {
+  //       //display matching card
+  //       card[index].classList.remove("hide");
+  //     } else {
+    //       //hide others
+    //       card[index].classList.add("hide");
+    //     }
+    //   });
+    // };
+    //Initially display all card
+    window.onload = () => {
+      filterProduct("all");
+    };
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+      </div>
+    </body>
+</html>
