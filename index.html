@@ -117,22 +117,22 @@
 					</div>
 					<div class="product-card">
 						<div class="product-image"><a href="graphic-designing.html">
-							<span class="discount-tag"></span>
+							<span class="discount-tag">1 course</span>
 							<img src="img/website course box-01.jpg" class="product-thumb" alt=""></a>
 							<a  href="graphic-designing.html"></a><button class="card-btn">Details</button></a>
 						</div>
 						<div class="product-info">
-							<h2 class="product-brand">Graphic Designing</h2>
+							<h3 class="product-brand" style="font-size: 23px;">Graphic Designing</h3>
 						</div>
 					</div>
 					<div class="product-card"><a href="digital-marketing.html">
 						<div class="product-image">
-							<span class="discount-tag"><p></p></span>
+							<span class="discount-tag"><p style="margin-bottom: 0px;">4 courses</p></span>
 							<img src="img/digital-marketing.jpg" class="product-thumb" alt="">
 							<a href="digital-marketing.html"><button class="card-btn">Details</button></a>
 						</div>
 						<div class="product-info">
-							<h2 class="product-brand">Digital marketing</h2>
+							<h3 class="product-brand">Digital marketing</h3>
 						</div>
 					</div>	
 					<div class="product-card"><a href="cma.html">
@@ -142,17 +142,17 @@
 							<a href="cma.html"><button class="card-btn">Details</button></a>
 						</div>
 						<div class="product-info">
-							<h2 class="product-brand">CA/CMA/ACCA</h2>
+							<h3 class="product-brand">CA/CMA/ACCA</h3>
 						</div>
 					</div>
-					<div class="product-card">
+					<!--div class="product-card">
 						<div class="product-image">
 							<span class="discount-tag"></span>
 							<img src="img/graphic-design.jpg" class="product-thumb" alt="">
 							<button class="card-btn">Details</button>
 						</div>
 						<div class="product-info">
-							<h2 class="product-brand">Graphic Designing</h2>
+							<h3 class="product-brand">Graphic Designing</h2>
 						</div>
 					</div>
 					<div class="product-card">
@@ -254,11 +254,11 @@
 						<div class="product-info">
 							<h2 class="product-brand">Entrance Coaching</h2>
 						</div>
-					</div>
+					</div-->
 				</div>
 			</section>
 			<!--popular destinations-->
-			<section class="product"> 
+			<!--section class="product"> 
 				<h1 class="product-category">Popular destinations</h1>
 				<button class="pre-btn"><img src="img/arrow.png" alt=""></button>
 				<button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
@@ -372,7 +372,7 @@
                     })
                     })
 				</script>
-			</section>
+			</section-->
 			<!--end-->
 			<div id="features" class="tabs" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
 				<div class="container">
@@ -505,12 +505,13 @@
 					delay:200
 				});
 
-				ScrollReveal().reveal('.banner-content', { delay: 200 , origin: 'right'});
+				ScrollReveal().reveal('.banner-content', { delay: 200 , origin: 'right', interval: '1000'});
 				ScrollReveal().reveal('.back-video', { delay: 200 , origin: 'left'});
-				ScrollReveal().reveal('.product-category', { delay: 200 , origin: 'top'});
-				ScrollReveal().reveal('.product-container', { delay: 300 , origin: 'right'});
+				ScrollReveal().reveal('.product-card', { delay: 200 , origin: 'right' , interval: '200'});
 				ScrollReveal().reveal('.consectetur_text, .dummy_text', { delay: 200 , origin: 'bottom'});
 				ScrollReveal().reveal('.image_4', { delay: 200 , origin: 'top'});
+				ScrollReveal().reveal('.container', { delay: 50 , origin: 'bottom'});
+				ScrollReveal().reveal('.nav', { delay: 50 , origin: 'bottom', interval:'1000'});
 			</script>
 			<!--end-->
 			<!--new carousel-->

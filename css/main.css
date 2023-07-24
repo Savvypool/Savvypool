@@ -3083,7 +3083,7 @@ h1, h2, h3, h4, h5, h6 {
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
+  width: 7vw;
   height: 100%;
   position: absolute;
   top: 0;
@@ -3344,6 +3344,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 75px;
 }
 
 .card__info i {
