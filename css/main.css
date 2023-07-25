@@ -3641,3 +3641,12 @@ ul.a {list-style-type: circle; padding-left: 1rem;}
     grid-column-gap: 1em;
   }
 }
+
+/*img course */
+.img-course1{
+  width: 100%; 
+  border-radius: 25px; 
+  padding-bottom: 10px;
+  object-fit: cover;
+  height: auto;
+}
