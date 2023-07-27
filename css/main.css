@@ -1,3 +1,4 @@
+
 /*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
@@ -1928,12 +1929,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width:600px) {
   .primary-btn1 {
-    margin-left: 65px;
-    padding-left: 56px;
     background-color: rgba(255, 200, 0, 0.555);
-    padding-right: 83px;
     padding-top: 4px;
-    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
 }
 }
 .primary-btn1:focus {
@@ -1950,6 +1950,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  transform: translate(-50%,-50%);
 }
 
 .primary-btn1:hover {
@@ -2487,9 +2488,9 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/f-bg.jpg) no-repeat center center/cover;
 }
 
-.footer-widget-area .overlay-bg {
+/* .footer-widget-area .overlay-bg {
   background: ;
-}
+} */
 
 .footer-widget-area .container {
   position: relative;
@@ -3190,15 +3191,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav > .nav-links > a {
+  border-radius: 100px;
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #000000;
+  outline: 2px solid transparent;
 }
 
 .nav > .nav-links > a:hover {
-  outline: 2px solid yellow;
-  border-radius: 100px;
+  outline:2px solid yellow;
 }
 
 .nav > #nav-check {
@@ -3206,6 +3208,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width:600px) {
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    display: none;
+  }
+
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -3219,6 +3225,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    border-radius: 5px;
     background-color: rgba(255, 201, 0, 0.8);
   }
   .nav > .nav-btn > label > span {
@@ -3239,19 +3246,22 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #cdcdcda6;
     backdrop-filter: blur(4px);
     border-radius: 10px;
+    padding: 10px;
   }
   .nav > .nav-links > a {
+    outline: 2px solid transparent;
+    border-radius: 100px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    margin: 10px 0px;
 }
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
+ 
   .nav > #nav-check:checked ~ .nav-links {
-    height: 228px;
-    overflow-y: none;
+    height: auto;
+    
+
   }
   @media (max-width: 767px) {
     .consectetur_text {
@@ -3690,4 +3700,8 @@ ul.a {list-style-type: circle; padding-left: 1rem;}
   padding-bottom: 10px;
   object-fit: cover;
   height: auto;
+}
+
+.pre-btn:focus , .nxt-btn:focus{
+  outline: none;
 }
