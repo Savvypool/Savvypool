@@ -4,17 +4,17 @@ const courseData = [
         title: "CMA (IND)",
         description: "The specialised knowledge and skill of the professional members of the institute are being given due recognition for different Audit or Certification work under different statutes like maintenance of Cost Accounting Records and Cost Audit under section 148 of The Companies Act 2013 and Valuation Audit.",
         image: "https://www.pranjurixllp.com/images/pexels-kindel-media-7688460.jpg",
-        image1: "img/catalyst.jpg",
+        image1: "../img/catalyst.jpg",
         institute: "Catalyst Hub",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
     {
         title: "CMA (USA)",
         description: "The Certified Management Accountant (CMA) designation is a highly respected credential awarded by the Institute of Management Accountants (IMA) which is a US-based worldwide association for accountants and financial professionals working in business.",
         image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?cs=srgb&dl=pexels-kindel-media-7688336.jpg&fm=jpg",
-        image1: "img/catalyst.jpg",
+        image1: "../img/catalyst.jpg",
         institute: "Catalyst Hub",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
     {
         title: "CMA/Accounting (USA)",
@@ -22,7 +22,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
     {
         title: "CIMA",
@@ -30,7 +30,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
     {
         title: "Certificate in International Financial Reporting (Cert IFR)",
@@ -38,7 +38,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
     {
         title: "ACCA",
@@ -46,7 +46,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "cma(ind)_catalyst.html"
+        link: "../courses/cma(ind)_catalyst.html"
     },
 ];
 
