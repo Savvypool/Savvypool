@@ -3621,6 +3621,7 @@ ul.a {list-style-type: circle; padding-left: 1rem;}
 @media(max-width:767px){
   .web-icon{
     width: 5%;
+    height: 50px;
 }
 }
 
