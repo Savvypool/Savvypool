@@ -3,7 +3,7 @@ const courseData = [
     {
         title: "Graphic-Designing",
         description: "Our graphic design course is designed to provide students with the skills and knowledge they need to become proficient in this field. Our graphic design covers a lot of topics such as typography, color theory, layout design, digital illustration and many more..",
-        image: "img/2_1.jpg",
+        image: "../img/2_1.jpg",
         image1: "https://eidm.in/wp-content/uploads/2022/10/cropped-eidm-logo-small-01-e1665134014386-1.png",
         institute: "Eidm institute",
         link: "gradis_eidm.html"
