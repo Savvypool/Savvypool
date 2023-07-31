@@ -43,7 +43,7 @@ const courseData = [
     ,
     {
         title: "Diploma in Architectural Technology",
-        description: "Architectural technology is a field focused on applying innovative technological tools and design methods to the construction of buildings. You'll gain a broad base of skills including architectural modelling, presentation drawings, model construction etc. The curriculum includes a hands-on practicals that incorporates projects that reflect real-world architectural problems. This program will prepare you to work closely with licensed architects and produce usable construction drawings for working contractors.",
+        description: "Architectural technology is a field focused on applying innovative technological tools and design methods to the construction of buildings. You'll gain a broad base of skills including architectural modelling, presentation drawings, model construction etc.",
         image: "https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg",
         image1: "../img/Qsteps.png",
         institute: "xint school of design",
