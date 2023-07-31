@@ -392,6 +392,7 @@
 }
 .lnr-arrow-right:before {
 	content: "\e87a";
+	margin-left: -17px;
 }
 .lnr-move:before {
 	content: "\e87b";
