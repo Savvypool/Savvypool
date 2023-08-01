@@ -2881,7 +2881,7 @@ h1, h2, h3, h4, h5, h6 {
 	outline: none;
 	border-radius: .5rem;
 	margin-bottom: .75rem;
-	background: lightgrey;
+	background: #f8f8f8;
 	border: 1px solid var(--grey-d-1);
 	transition: .2s;
 }
