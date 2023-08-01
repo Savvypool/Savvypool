@@ -5,7 +5,7 @@ const courseData = [
         description: "SEO stands for Search Engine Optimization and it is used to increase a website’s online visibility.SEO techniques are applied to bring more visitors to a website. High website traffic helps to increase brand awareness and has the potential to convert visitors into customers.A website ideally wants to be at the top of the search engine result page.",
         image: "../img/3_1.jpg",
         image1: "https://eidm.in/wp-content/uploads/2022/10/cropped-eidm-logo-small-01-e1665134014386-1.png",
-        institute: "Eidm institute",
+        institute: "EIDM Institute",
         link: "../courses/advanced-seo.html"
     },
     {
@@ -13,7 +13,7 @@ const courseData = [
         description: "The Comprehensive Digital Marketing course is a 3 month Offline course provided at the Kannur Office of EIDM Kannur. The course is designed in such a way that it is appropriate for anyone aspiring to learn Digital marketing.",
         image: "../img/3_2.jpg",
         image1: "https://eidm.in/wp-content/uploads/2022/10/cropped-eidm-logo-small-01-e1665134014386-1.png",
-        institute: "Eidm institute",
+        institute: "EIDM Institute",
         link: "../courses/comp-digimar.html"
     },
     {
@@ -21,7 +21,7 @@ const courseData = [
         description: "Social media strategy is basically a plan aimed to maximize engagement and interactions of a company across social media to achieve the company's objective. Social media strategy is applied to generate leads, improve brand awareness or create a viral effect.",
         image: "../img/3_3.jpg",
         image1: "https://eidm.in/wp-content/uploads/2022/10/cropped-eidm-logo-small-01-e1665134014386-1.png",
-        institute: "Eidm institute",
+        institute: "EIDM Institute",
         link: "adsocial.html"
     },
     {

@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.createElement("img");
         img.className = "mini_image";
         img.src = course.image1;
+        img.style.marginRight = course.institute.length < 8 ? "-120px" : "-37px";
         
         const image = document.createElement("img");
         image.className = "card__image";
