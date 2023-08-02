@@ -2929,10 +2929,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* font changes */
-.font{
-  font-family: 'Nabla', cursive;
-  font-size: 80px;
-}
+
 /* courses carousel */
 /* new carousel testing */
 .product {
@@ -2996,7 +2993,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .product-image {
     margin-left: -6px;
-    height: 131px;
+    height: 186px;
     width: 188px;
   }
 }
@@ -3101,7 +3098,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .pre-btn,
   .nxt-btn {
-    height: 104%;
+    height: 120%;
   }
 }
 
