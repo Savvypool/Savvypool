@@ -39,28 +39,46 @@
 			<div class="dup-body-wrap">
 				<!-- Start Header Area -->
 				<header class="default-header">
-					<div class="nav">
-						<input type="checkbox" id="nav-check">
-						<div class="nav-header">
-							<div class="nav-title">
-								<a href="index.html"><h1><strong>Savvypool</strong></h1></a>
-							</div>
+					<nav class="navbar">
+						<a href="../index.html" class="nav-logo"><h1><strong>Savvypool</strong></h1></a>
+						<ul class="nav-menu">
+							<li class="nav-item">
+								<a href="../index.html" style="font-weight: 500;" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="../List-your-university.html" class="nav-link">List your Institute</a>
+							</li>
+							<li class="nav-item">
+								<button class="primary-btn1" data-toggle="modal" data-target="#modal">Join us</button>
+							</li>
+						</ul>
+						<div class="hamburger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
 						</div>
-						<div class="nav-btn">
-						  <label for="nav-check">
-							<span></span>
-							<span></span>
-							<span></span>
-						  </label>
-						</div>
-						<div class="nav-links">
-						  <a href="index.html" style="font-family: DM Sans;">Home</a>
-						  
-					  </div>
+					</nav>
 				</header>
 			<!-- End Header Area -->
 			<!-- Start Banner Area -->
 			<div class="container-xxl py-51" style="background-color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+				<div class="modal" id="modal">
+					<div class="modal__wrapper">
+					  <h3>Be a member of SavvyPool.</h3>
+					  <p>Provide us with your Email address and be the first one to know when our App arrives!</p>
+					  <form action="https://formsubmit.co/136b8cee9c18ce0f1e75cbf90656f73b " method="POST">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_autoresponse" value="Heyy Savvy exec here, well reach out to you ASAP">
+						<input type="name" name="Name" required placeholder="Enter your name">
+						<input type="email" name="Email" required placeholder="Enter e-mail address">
+						<input type="hidden" name="_captcha" value="false">
+						<div class="btn-group">
+						  <button type="submit" class="btn btn-blue">Submit</button>
+						  <a href="index.html" class="btn btn-blue">Cancel</a>
+						</div>
+					  </form>
+					</div>
+				  </div>
 				<div class="team_section_2 layout_padding">
 					<div class="container">
 						<div class="breadcrumbs">

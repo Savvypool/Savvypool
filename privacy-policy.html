@@ -38,31 +38,45 @@
 <body class="dup-body">
     <div class="dup-body-wrap">
     <header class="default-header">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                <a href="index.html"><h1><strong>Savvypool</strong></h1></a>
-              </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><h1><strong>Savvypool</strong></h1></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html"  class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="List-your-university.html" class="nav-link">List your Institute</a>
+                </li>
+                <li class="nav-item">
+                    <button class="primary-btn1" data-toggle="modal" data-target="#modal">Join us</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <div class="nav-links">
-                <a href="index.html" style="font-family: DM Sans;">Home</a>
-                <!--<a href="mentors.html" style="font-family: DM Sans;">Mentors</a>-->
-                <a href="List-your-university.html" style="outline: 2px solid yellow;border-radius: 25px;">List your institute</a>
-                <button class="primary-btn1" data-toggle="modal" data-target="#modal" style="font-family: DM Sans;">List Now &nbsp;<span class="lnr lnr-arrow-right"></span></button>
-            </div>
-          </div>
+        </nav>
     </header>
     <!-- Team Start -->
     <div class="container-xxl py-51" style="background-color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+        <div class="modal" id="modal">
+            <div class="modal__wrapper">
+              <h3>Be a member of SavvyPool.</h3>
+              <p>Provide us with your Email address and be the first one to know when our App arrives!</p>
+              <form action="https://formsubmit.co/136b8cee9c18ce0f1e75cbf90656f73b " method="POST">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Heyy Savvy exec here, well reach out to you ASAP">
+                <input type="name" name="Name" required placeholder="Enter your name">
+                <input type="email" name="Email" required placeholder="Enter e-mail address">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="btn-group">
+                  <button type="submit" class="btn btn-blue">Submit</button>
+                  <a href="index.html" class="btn btn-blue">Cancel</a>
+                </div>
+              </form>
+            </div>
+          </div>
         <div class="policy" style="margin-left: 10px;">
             <h1 class="privacy">
                 Privacy policy
@@ -197,6 +211,9 @@
                     other illegal activity, and as otherwise disclosed to you at the time of collection.
                     <br>
                     <br>
+            
+            
+            
                     b) We gather and analyse demographic and profile information regarding the use of our website
                     by our users in an attempt to continuously enhance our product and service offerings. In order to
                     further its goals and in the interest of promoting open, consumer- and user-driven practices and
@@ -204,7 +221,7 @@
                     members to advertisers, groups, associations, governmental authorities, and others. 
                     <br>
                     <br>
-                    C) We do not divulge sensitive personal data about specific Users to advertisers, merchants, or
+                    c) We do not divulge sensitive personal data about specific Users to advertisers, merchants, or
                     other third parties that promote their goods or services on the platform, nor do we divulge such
                     data to governmental agencies or outside service providers.   
                     <br>
@@ -382,7 +399,7 @@
                         CHANGES TO THE PRIVACY POLICY :-
                         <br>
                         <br>
-                        a- We might occasionally update our privacy statement. Any significant changes will be
+                        We might occasionally update our privacy statement. Any significant changes will be
                         communicated to you by posting the updated Privacy Policy on our website or through the
                         App. You agree to the revised Privacy Policy by continuing to use the App after such updates.
                         
