@@ -22,15 +22,15 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "../courses/cma(ind)_catalyst.html"
+        link: "../courses/cma(usa)_keystoneacademia.html"
     },
     {
         title: "CIMA",
         description: "The CMA ®️ (Certified Management Accountant) certification is a globally recognized advanced accounting credential offered by IMA®️ (Institute of Management Accountants). The CMA has been the global benchmark for management accountants and financial professionals for the past five decades.",
-        image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        image: "https://images.pexels.com/photos/5466814/pexels-photo-5466814.jpeg?cs=srgb&dl=pexels-olia-danilevich-5466814.jpg&fm=jpg",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "../courses/cma(ind)_catalyst.html"
+        link: "../courses/cima_keystoneacademia.html"
     },
     {
         title: "Certificate in International Financial Reporting (Cert IFR)",
@@ -38,7 +38,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "../courses/cma(ind)_catalyst.html"
+        link: "../courses/certIFR_keystoneacademia.html"
     },
     {
         title: "ACCA",
@@ -46,7 +46,7 @@ const courseData = [
         image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         image1: "https://www.keystoneacademia.com/assets/images/logo.png",
         institute: "Keystone Academia",
-        link: "../courses/cma(ind)_catalyst.html"
+        link: "../courses/acca_keystoneacademia.html"
     },
 ];
 
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.createElement("img");
         img.className = "mini_image";
         img.src = course.image1;
+        img.style.marginRight = course.institute.length < 8 ? "-120px" : "-37px";
         
         const image = document.createElement("img");
         image.className = "card__image";

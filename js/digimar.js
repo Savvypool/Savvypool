@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const image = document.createElement("img");
         image.className = "card__image";
         image.src = course.image;
+        img.style.marginRight = course.institute.length < 8 ? "-120px" : "-37px";
 
         const content = document.createElement("div");
         content.className = "card__content";
