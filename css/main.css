@@ -3659,7 +3659,7 @@ ul.a {list-style-type: circle; padding-left: 1rem;}
 }
 
 .nav-link:hover{
-  color: yellow;
+  color: #ffc900;
 }
 
 .nav-logo {
