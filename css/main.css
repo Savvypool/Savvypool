@@ -2068,7 +2068,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .banner-content h1 {
-    font-size: 24px;
+    font-size: 21px;
     margin-right: 4px;
     line-height: 39px;
   }
