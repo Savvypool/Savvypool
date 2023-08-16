@@ -1926,6 +1926,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 4px 4px 0 #000000;
   transition: transform 0.2s, box-shadow 0.2s;
   padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 180px;
+  background-color: #FFC900;
 }
 @media (max-width:600px) {
   .primary-btn1 {
@@ -1953,8 +1957,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-btn1:hover {
-  background: #FFC947;
-  color: #fff;
+  background: white;
+  color: #000000;
   transform: translateX(4px) translateY(4px);
 }
 
